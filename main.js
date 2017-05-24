@@ -1,5 +1,5 @@
 class Fighter {
-    constructor(name, power, health) {
+    constructor(name = "Default Fighter", power = 1, health = 20) {
         this.name = name;
         this.power = power;
         this.health = health;
@@ -24,8 +24,9 @@ function Fight(Fighter, ImprovedFighter, ...point) {
     
     let pointNumber = 0;
     function currentPoint() {        
-        ++pointNumber;        
+        ++pointNumber;         
         if (pointNumber > point.length - 1) pointNumber = 0;       
+        if (point[pointNumber] == undefined) point[pointNumber] = 1;
         return point[pointNumber];
     }
     
