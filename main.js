@@ -30,7 +30,11 @@ function Fight(Fighter, ImprovedFighter, ...point) {
         return point[pointNumber];
     }
     
-    console.log('Ready? Fight!');
+    function start(a, b) {
+        console.log(a, b);
+    }
+    start(...["Ready?", "Fight!"]);
+    
     while (true) {
         Fighter.hit(ImprovedFighter, currentPoint());
         if (ImprovedFighter.health <= 0) {
