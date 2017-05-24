@@ -15,3 +15,9 @@ class Fighter {
         enemy.setDamage(damage);       
     }
 }
+
+class ImprovedFighter extends Fighter {
+    doubleHit(enemy, point) {
+        super.hit(enemy, point * 2);
+    }
+}
