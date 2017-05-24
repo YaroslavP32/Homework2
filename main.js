@@ -30,7 +30,7 @@ function Fight(Fighter, ImprovedFighter, ...point) {
         return point[pointNumber];
     }
     
-    function start(a, b) {
+    var start = (a, b) => {
         console.log(a, b);
     }
     start(...["Ready?", "Fight!"]);
