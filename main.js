@@ -46,6 +46,6 @@ function Fight(Fighter, ImprovedFighter, ...point) {
     }
 }
 
-var Hulk = new Fighter('Hulk', 1, 60);
-var Batman = new ImprovedFighter('Batman', 1, 35);
+var Hulk = new Fighter('Hulk', 1, 55);
+var Batman = new ImprovedFighter('Batman', 1, 30);
 Fight(Hulk, Batman, 1, 2, 3, 4);
