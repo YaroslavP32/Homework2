@@ -38,12 +38,12 @@ function Fight(Fighter, ImprovedFighter, ...point) {
     while (true) {
         Fighter.hit(ImprovedFighter, currentPoint());
         if (ImprovedFighter.health <= 0) {
-            console.log(`${Fighter.name} makes critical hit and WINS!!!`);
+            console.log(`${Fighter.name} makes a critical hit and WINS!!!`);
             return false;
         }
         ImprovedFighter.doubleHit(Fighter, currentPoint());
         if (Fighter.health <= 0) {
-            console.log(`${ImprovedFighter.name} makes critical hit and WINS!!!`);
+            console.log(`${ImprovedFighter.name} makes a critical hit and WINS!!!`);
             return false;
         }
        
